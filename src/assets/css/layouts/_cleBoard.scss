@@ -1,0 +1,26 @@
+.cleBoard {
+  background-color: $color-black;
+  height: $clieBoard-hight;
+  width: 414px;
+
+  & .row {
+    height: $row-hight;
+    width: $row-width;
+
+    overflow: hidden;
+
+    // border: 1px solid red;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .cleBoard {
+    width: $clieBoard-width;
+  }
+}

@@ -1,0 +1,25 @@
+import React, {useEffect} from "react";
+import { useSelector } from "react-redux";
+
+const scren = () => {
+  const RLTnumber = useSelector(state => state.currentNB);
+
+  // useEffect(()=>{
+  //   console.log(`rendreing screen with value of : ${RLTnumber}`);
+    
+  // },[RLTnumber])
+
+
+  return (
+    <div className="scren">
+      <div className="operation">
+        <p></p>
+      </div>
+      <div className="currentNB">
+        <p>{RLTnumber}</p>
+      </div>
+    </div>
+  );
+};
+
+export default scren;
