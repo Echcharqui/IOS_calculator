@@ -1,15 +1,8 @@
-import React, {useEffect} from "react";
-import { useSelector } from "react-redux";
+import React from "react"
+import { useSelector } from "react-redux"
 
 const scren = () => {
-  const RLTnumber = useSelector(state => state.currentNB);
-
-  // useEffect(()=>{
-  //   console.log(`rendreing screen with value of : ${RLTnumber}`);
-    
-  // },[RLTnumber])
-
-
+  const RLTnumber = useSelector(state => state.currentNB)
   return (
     <div className="scren">
       <div className="operation">
